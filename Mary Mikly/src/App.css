@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+
+}
+
+
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0, 3);
+    z-index: 100;
+    transition: all 300ms ease;
+
+}
+
+.btn-wsp:hover {
+    background: #20ba5a;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .btn-wsp {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .imagen {
+        width: 100%;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-image: url('/img/imageninicio.png');
+    }
+
+}
+
+.imagen {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-image: url('/img/imageninicio.png');
+}
+
+.imagen-carousel {
+    background-position: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.faq-heading {
+    border-bottom: #777;
+    padding: 20px 60px;
+}
+
+.faq-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hr-line {
+    width: 60%;
+    margin: auto;
+
+}
+
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    color: #444;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 90%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+
+.faq-body {
+    margin: auto;
+    /* text-align: center; */
+    width: 80%;
+    padding: auto;
+
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+    background-color: #F9F9F9;
+}
+
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+.texto-nosotros {
+    /* center the element */
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    /* give it dimensions */
+    width: 50%;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+.reveal.active-scroll{
+    transform: translateY(0px);
+    opacity: 1;
+}
